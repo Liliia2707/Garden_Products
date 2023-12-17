@@ -1,0 +1,12 @@
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+a {
+    color: #282828;
+    font-size: 20px;
+    line-height: 130%;
+}

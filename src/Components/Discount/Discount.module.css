@@ -1,0 +1,25 @@
+.discount {
+    background: url(../../Media/backgroundDiscount.jpg) center/cover;
+    padding-top: 13.33vh;
+    padding-bottom: 35vh;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #339933;
+}

@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+input {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 516px;
+    padding: 16px 32px;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    background-color: #0B710B;
+    font-weight: 500;
+    line-height: 130%;
+    color: #ffffff;
+}
+
+input:last-child {
+    background-color: #ffffff;
+    color: #282828;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
