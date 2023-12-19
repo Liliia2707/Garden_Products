@@ -5,49 +5,11 @@ html {
     box-sizing: border-box;
 }
 
-/* *::after,
-*::before {
-    box-sizing: inherit;
-} */
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-} */
-
 ul,
 li,
 ol {
     list-style: none;
 }
-
-/* img {
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    border-style: none;
-} */
-
-/* input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-input,
-textarea {
-    cursor: text;
-}
-
-textarea {
-    resize: none;
-} */
 
 input:focus,
 button:focus {
@@ -66,4 +28,5 @@ a {
     text-decoration: none;
     outline: none;
     color: inherit;
+    cursor: pointer;
 }

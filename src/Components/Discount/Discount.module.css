@@ -1,7 +1,7 @@
 .discount {
     background: url(../../Media/backgroundDiscount.jpg) center/cover;
-    padding-top: 13.33vh;
-    padding-bottom: 35vh;
+    padding-top: 80px;
+    padding-bottom: 210px;
 }
 
 h1 {
@@ -10,10 +10,14 @@ h1 {
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 40px;
+
+
 }
 
-button {
+.discount_wrapper button {
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     color: #ffffff;
     display: flex;
     padding: 16px 56px;
@@ -22,4 +26,60 @@ button {
     gap: 10px;
     border-radius: 6px;
     background: #339933;
+}
+
+
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 90px;
+    }
+
+    .discount {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 68px;
+    }
+
+    .discount {
+        padding-top: 60px;
+        padding-bottom: 326px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .discount {
+        padding-top: 50px;
+        padding-bottom: 215px;
+    }
+
+    .discount_wrapper button {
+        font-size: 20px;
+        padding: 14px 52px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 52px;
+
+    }
+
+    .discount {
+        padding-bottom: 236px;
+    }
+
 }

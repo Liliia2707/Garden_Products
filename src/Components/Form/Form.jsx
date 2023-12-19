@@ -6,10 +6,12 @@ export const Form = () => {
   return (
     <div className={styles.form}>
       <div className="container">
-        <h3>5% off on the first order</h3>
-        <div className={styles.formBox}>
-          <img src={handsImage} alt="hands" />
-          <DataForm />
+        <div className={styles.form_wrapper}>
+          <h3>5% off on the first order</h3>
+          <div className={styles.formBox}>
+            <img src={handsImage} alt="hands" className={styles.hidden} />
+            <DataForm />
+          </div>
         </div>
       </div>
     </div>
