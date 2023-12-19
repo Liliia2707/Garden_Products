@@ -26,6 +26,16 @@ h1 {
     gap: 10px;
     border-radius: 6px;
     background: #339933;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.discount_wrapper button:hover {
+    background-color: #2b802b;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.discount_wrapper button:active {
+    transform: scale(0.95);
 }
 
 

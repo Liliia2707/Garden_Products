@@ -52,6 +52,10 @@
     align-items: center;
 }
 
+.logo_box img:hover {
+    transform: scale(1.2);
+}
+
 .mapImage img {
     width: 100%;
 }

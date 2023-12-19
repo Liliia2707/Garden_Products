@@ -23,12 +23,24 @@ input {
     color: #ffffff;
 }
 
-input:last-child {
+#submit_button {
     background-color: #ffffff;
     color: #282828;
     font-weight: 600;
     cursor: pointer;
     margin-top: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+
+#submit_button:active {
+    transform: scale(0.95);
+}
+
+#submit_button:hover {
+    border: 1px solid gray;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
 }
 
 input::placeholder {
