@@ -6,7 +6,7 @@
 
 .footer_wrapper h3 {
     color: #282828;
-    font-size: 64px;
+    font-size: clamp(2.5rem, 2rem + 2.22vw, 4rem);
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 40px;
@@ -69,7 +69,6 @@
 
 @media (max-width: 1000px) {
     .footer_wrapper h3 {
-        font-size: 56px;
         margin-bottom: 32px;
     }
 
@@ -79,10 +78,6 @@
 }
 
 @media (max-width: 768px) {
-    .footer_wrapper h3 {
-        font-size: 48px;
-    }
-
     .contact_container>div {
         padding: 24px 20px;
     }
@@ -108,9 +103,5 @@
 @media (max-width: 480px) {
     .contact_container>div {
         padding: 24px 20px;
-    }
-
-    .footer_wrapper h3 {
-        font-size: 40px;
     }
 }

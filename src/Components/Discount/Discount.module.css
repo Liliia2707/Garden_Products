@@ -6,7 +6,7 @@
 
 h1 {
     color: #ffffff;
-    font-size: 96px;
+    font-size: clamp(3.25rem, 2.333rem + 4.07vw, 6rem);
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 40px;
@@ -40,10 +40,6 @@ h1 {
 
 
 @media (max-width: 1440px) {
-    h1 {
-        font-size: 90px;
-    }
-
     .discount {
         padding-top: 60px;
         padding-bottom: 120px;
@@ -52,10 +48,6 @@ h1 {
 }
 
 @media (max-width: 1000px) {
-    h1 {
-        font-size: 68px;
-    }
-
     .discount {
         padding-top: 60px;
         padding-bottom: 326px;
@@ -65,7 +57,6 @@ h1 {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 60px;
         margin-bottom: 20px;
     }
 
@@ -83,11 +74,6 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 52px;
-
-    }
-
     .discount {
         padding-bottom: 236px;
     }
