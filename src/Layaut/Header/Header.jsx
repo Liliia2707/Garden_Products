@@ -12,7 +12,7 @@ export const Header = () => {
           <img src={logo} alt="logo" />
           <Navigation />
           <div className={styles.image_box}>
-            <img src={bagIcon} alt="bagIcon" />
+            <img src={bagIcon} alt="bagIcon" id={styles.bagIcon} />
             <img src={menuImage} alt="burger-menu" id={styles.burger_menu} />
           </div>
         </div>

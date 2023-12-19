@@ -23,6 +23,11 @@ input {
     color: #ffffff;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #0B710B inset;
+    -webkit-text-fill-color: #ffffff;
+}
+
 #submit_button {
     background-color: #ffffff;
     color: #282828;

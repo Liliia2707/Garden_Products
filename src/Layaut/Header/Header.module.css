@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.header_wrapper img:last-child {
+#bagIcon {
     cursor: pointer;
 }
 
