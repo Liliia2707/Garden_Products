@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { CategoryItem } from "../CategoryItem/CategoryItem";
 import { baseUrl } from "../../utils/api";
 
-export const Catigories = () => {
+export const Categories = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     const fetchCategories = async () => {

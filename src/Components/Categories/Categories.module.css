@@ -7,7 +7,7 @@
 
 
 .line {
-    width: 66%;
+    width: 67%;
     height: 1px;
     background-color: #DDD;
     margin-right: 0;
@@ -39,4 +39,5 @@
     align-items: center;
     gap: 32px;
     margin-bottom: 80px;
+    cursor: pointer;
 }

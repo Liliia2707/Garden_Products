@@ -1,4 +1,4 @@
-import { Catigories } from "../../Components/Categories/Categories";
+import { Categories } from "../../Components/Categories/Categories";
 import { Discount } from "../../Components/Discount/Discount";
 import { Form } from "../../Components/Form/Form";
 import { Sale } from "../../Components/Sale/Sale";
@@ -10,7 +10,7 @@ export const MainPage = () => {
     <div>
       <Header />
       <Discount />
-      <Catigories />
+      <Categories />
       <Form />
       <Sale />
       <Footer />
