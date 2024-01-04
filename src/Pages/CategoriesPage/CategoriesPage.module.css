@@ -1,0 +1,36 @@
+p {
+    color: #282828;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+.button_box {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.button_box button {
+    color: #8B8B8B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 126%;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid#DDD;
+    background-color: #ffffff;
+}
+
+.button_box button:last-child {
+    color: #282828;
+}
+
+.line {
+    width: 16px;
+    height: 1px;
+    background: #DDD;
+}

@@ -51,7 +51,7 @@
 .prices {
     display: flex;
     gap: 16px;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .prices p:first-child {

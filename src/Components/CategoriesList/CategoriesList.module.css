@@ -1,0 +1,9 @@
+.categories_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+}
