@@ -10,7 +10,7 @@ export const MainPage = () => {
     <div>
       <Header />
       <Discount />
-      <Categories />
+      <Categories content="main" />
       <Form />
       <Sale />
       <Footer />

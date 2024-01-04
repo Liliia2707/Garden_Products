@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { CategoryItem } from "../CategoryItem/CategoryItem";
 import { baseUrl } from "../../utils/api";
 
-export const Categories = () => {
+export const Categories = ({ content }) => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     const fetchCategories = async () => {
@@ -23,9 +23,15 @@ export const Categories = () => {
           <button>All categories </button>
         </div>
         <div className={style.categories_block}>
-          {categories
-            .map((category) => <CategoryItem key={category.id} {...category} />)
-            .splice(0, 4)}
+          {content === "main"
+            ? categories
+                .map((category) => (
+                  <CategoryItem key={category.id} {...category} />
+                ))
+                .splice(0, 4)
+            : categories.map((category) => (
+                <CategoryItem key={category.id} {...category} />
+              ))}
         </div>
       </div>
     </div>
