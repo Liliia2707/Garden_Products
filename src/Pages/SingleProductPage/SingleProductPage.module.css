@@ -240,14 +240,13 @@
     }
 
     .image_card {
-        width: 47%;
         position: relative;
     }
 
     .prices_box p:last-child {
         display: inline;
         position: fixed;
-        right: 55%;
+        right: 52%;
         top: 17%;
     }
 
