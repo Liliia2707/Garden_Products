@@ -3,6 +3,8 @@ import { baseUrl } from "../../utils/api";
 import styles from "./SingleProductPage.module.css";
 import plus from "../../Media/plus.svg";
 import minus from "../../Media/minus.svg";
+import { Header } from "../../Layaut/Header/Header";
+import { Footer } from "../../Layaut/Footer/Footer";
 
 export const SingleProductPage = () => {
   const [product, setProduct] = useState([{}]);
@@ -25,9 +27,23 @@ export const SingleProductPage = () => {
   );
   return (
     <div>
+      <Header />
       <div className="container">
+        <div className={styles.buttons}>
+          <button>Main page</button>
+          <div className={styles.line}></div>
+          <button>Categories</button>
+          <div className={styles.line}></div>
+          <button>Tools and equipment</button>
+          <div className={styles.line}></div>
+          <button>Secateurs</button>
+        </div>
         <div className={styles.card_product}>
-          <img src={imageUrl} alt={product[0].title} />
+          <img
+            src={imageUrl}
+            alt={product[0].title}
+            className={styles.image_card}
+          />
           <div className={styles.card_descriptoin}>
             <h2>{product[0].title}</h2>
             <div className={styles.prices_box}>
@@ -55,7 +71,12 @@ export const SingleProductPage = () => {
             </div>
           </div>
         </div>
+        <div className={styles.text_box_hidden}>
+          <p>Description</p>
+          <p>{product[0].description}</p>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

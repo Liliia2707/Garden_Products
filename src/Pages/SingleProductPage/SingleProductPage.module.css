@@ -1,3 +1,44 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.line {
+    width: 16px;
+    height: 1px;
+    background: #DDD;
+}
+
+.buttons button {
+    color: #8B8B8B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126%;
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #DDD;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:last-child {
+    color: #282828;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+.buttons button:hover {
+    color: #0B710B;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .card_product {
     display: flex;
     padding: 40px 0 82px 0;
@@ -19,8 +60,10 @@
     margin-bottom: 16px;
 }
 
-.card_product img {
+.image_card {
     width: 57%;
+    height: auto;
+    object-fit: cover;
     border-radius: 12px;
 }
 
@@ -32,7 +75,7 @@
 
 .card_descriptoin h2 {
     color: #282828;
-    font-size: 40px;
+    font-size: clamp(1.75rem, 1.5rem + 1.11vw, 2.5rem);
     font-weight: 700;
     line-height: 110%;
     letter-spacing: 1.2px;
@@ -46,7 +89,7 @@
 
 .prices_box p:first-child {
     color: #282828;
-    font-size: 64px;
+    font-size: clamp(2.5rem, 2rem + 2.22vw, 4rem);
     font-weight: 700;
     line-height: 110%;
     margin-right: 32px;
@@ -54,7 +97,7 @@
 
 .prices_box p:nth-child(2) {
     color: #8B8B8B;
-    font-size: 40px;
+    font-size: clamp(1.75rem, 1.5rem + 1.11vw, 2.5rem);
     font-weight: 500;
     line-height: 130%;
     text-decoration: line-through;
@@ -68,7 +111,7 @@
     padding: 4px 8px;
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.6px;
@@ -111,13 +154,14 @@
 }
 
 .button_box button {
-    padding: 16px 86px;
+    padding: 16px 0;
+    width: 67%;
     border-radius: 6px;
     background: #393;
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
@@ -138,4 +182,111 @@
 
 .counter_box {
     display: flex;
+}
+
+.text_box_hidden {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .image_card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text_box {
+        display: none;
+    }
+
+    .text_box_hidden {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .text_box_hidden p:last-child {
+        color: #282828;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .text_box_hidden p:first-child {
+        color: #282828;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 16px;
+    }
+
+    .card_product {
+        padding-bottom: 20px;
+    }
+
+    .button_box {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .button_box button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .prices_box p:last-child {
+        display: none;
+    }
+
+    .image_card {
+        width: 47%;
+        position: relative;
+    }
+
+    .prices_box p:last-child {
+        display: inline;
+        position: fixed;
+        right: 55%;
+        top: 17%;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .minus,
+    .plus {
+        width: 47px;
+        height: 47px;
+    }
+
+    .counter {
+        height: 47px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .card_descriptoin h2 {
+        margin-bottom: 0;
+    }
+
+    .card_product {
+        flex-direction: column;
+    }
+
+    .image_card {
+        width: 100%;
+    }
+
+    .button_box button {
+        width: 100%;
+    }
+
+    .prices_box p:last-child {
+        right: 8%;
+    }
 }
