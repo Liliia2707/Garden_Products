@@ -12,7 +12,7 @@
     top: 15px;
     right: 15px;
     color: #FFF;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.6px;
@@ -37,7 +37,7 @@
 
 .title {
     color: #282828;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
     font-weight: 500;
     line-height: 130%;
     overflow: hidden;
@@ -56,14 +56,14 @@
 
 .prices p:first-child {
     color: #282828;
-    font-size: 40px;
+    font-size: clamp(2.25rem, 2.167rem + 0.37vw, 2.5rem);
     font-weight: 600;
     line-height: 110%;
 }
 
 .prices p:last-child {
     color: #8B8B8B;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.083rem + 0.19vw, 1.25rem);
     font-weight: 500;
     line-height: 130%;
     text-decoration-line: line-through;
