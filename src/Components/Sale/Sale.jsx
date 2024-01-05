@@ -11,6 +11,9 @@ export const Sale = () => {
           <button>All sales</button>
         </div>
         <ProductsList />
+        <div className={style.hidden_button}>
+          <button>All sales</button>
+        </div>
       </div>
     </div>
   );

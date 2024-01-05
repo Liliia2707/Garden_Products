@@ -16,18 +16,16 @@ export const CategoriesList = ({ content }) => {
   }, []);
   return (
     <div>
-      <div className="container">
-        <div className={style.categories_block}>
-          {content === "main"
-            ? categories
-                .map((category) => (
-                  <CategoryItem key={category.id} {...category} />
-                ))
-                .splice(0, 4)
-            : categories.map((category) => (
+      <div className={style.categories_block}>
+        {content === "main"
+          ? categories
+              .map((category) => (
                 <CategoryItem key={category.id} {...category} />
-              ))}
-        </div>
+              ))
+              .splice(0, 4)
+          : categories.map((category) => (
+              <CategoryItem key={category.id} {...category} />
+            ))}
       </div>
     </div>
   );

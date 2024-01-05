@@ -6,3 +6,19 @@
     margin-bottom: 80px;
     cursor: pointer;
 }
+
+@media (max-width: 1440px) {
+    .products_block {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .products_block {
+        flex-direction: column;
+    }
+
+    .products_block {
+        margin-bottom: 24px;
+    }
+}

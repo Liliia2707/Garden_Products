@@ -36,14 +36,16 @@ export const SingleProductPage = () => {
               <p>-{discountPercentage}%</p>
             </div>
             <div className={styles.button_box}>
-              <div className={styles.minus}>
-                <img src={minus} alt="minus" />
-              </div>
-              <div className={styles.counter}>
-                <p>1</p>
-              </div>
-              <div className={styles.plus}>
-                <img src={plus} alt="plus" />
+              <div className={styles.counter_box}>
+                <div className={styles.minus}>
+                  <img src={minus} alt="minus" />
+                </div>
+                <div className={styles.counter}>
+                  <p>1</p>
+                </div>
+                <div className={styles.plus}>
+                  <img src={plus} alt="plus" />
+                </div>
               </div>
               <button>Add to cart</button>
             </div>

@@ -77,6 +77,8 @@
 .button_box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 32px;
 }
 
 .button_box img {
@@ -121,4 +123,19 @@
     line-height: 130%;
     margin-left: 32px;
     white-space: nowrap;
+    background: #339933;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button_box button:hover {
+    background-color: #2b802b;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.button_box button:active {
+    transform: scale(0.95);
+}
+
+.counter_box {
+    display: flex;
 }

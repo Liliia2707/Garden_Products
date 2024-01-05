@@ -16,7 +16,7 @@ export const ProductsItem = ({ image, title, price, discont_price }) => {
     >
       <img src={imageUrl} alt={title} />
       <div className={styles.text_descriptoin}>
-        <p>{title}</p>
+        <p className={styles.title}>{title}</p>
         <div className={styles.prices}>
           <p>${price}</p>
           <p>${discont_price}</p>

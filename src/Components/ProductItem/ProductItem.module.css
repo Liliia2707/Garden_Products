@@ -1,5 +1,5 @@
 .productCard {
-    width: 100%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     border-radius: 0 0 12px 12px;
 }
 
-.text_descriptoin p {
+.title {
     color: #282828;
     font-size: 20px;
     font-weight: 500;
@@ -67,4 +67,32 @@
     font-weight: 500;
     line-height: 130%;
     text-decoration-line: line-through;
+}
+
+.productCard:hover .title {
+    color: #0B710B;
+}
+
+@media (max-width: 1440px) {
+    .productCard {
+        width: 31%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .productCard {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+    .productCard {
+        width: 46%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productCard {
+        width: 100%;
+    }
 }

@@ -10,8 +10,11 @@ export const Categories = () => {
           <div className={style.line}></div>
           <button>All categories </button>
         </div>
+        <CategoriesList content="main" />
+        <div className={style.hidden_button}>
+          <button>All categories </button>
+        </div>
       </div>
-      <CategoriesList content="main" />
     </div>
   );
 };

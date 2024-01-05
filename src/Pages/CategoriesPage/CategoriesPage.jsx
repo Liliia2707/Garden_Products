@@ -14,8 +14,8 @@ export const CategoriesPage = () => {
           <button>Categories</button>
         </div>
         <p className={style.title}>Categories</p>
+        <CategoriesList />
       </div>
-      <CategoriesList />
       <Footer />
     </div>
   );

@@ -5,5 +5,20 @@
     gap: 32px;
     margin-bottom: 80px;
     cursor: pointer;
-    /* flex-wrap: wrap; */
+}
+
+@media (max-width: 1440px) {
+    .categories_block {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories_block {
+        flex-direction: column;
+    }
+
+    .categories_block {
+        margin-bottom: 24px;
+    }
 }
