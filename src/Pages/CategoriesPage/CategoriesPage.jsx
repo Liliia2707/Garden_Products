@@ -13,7 +13,7 @@ export const CategoriesPage = () => {
           <div className={style.line}></div>
           <button>Categories</button>
         </div>
-        <p>Categories</p>
+        <p className={style.title}>Categories</p>
       </div>
       <CategoriesList />
       <Footer />
