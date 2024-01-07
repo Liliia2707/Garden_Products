@@ -7,8 +7,8 @@ import { SingleProductPage } from './Pages/SingleProductPage/SingleProductPage';
 function App() {
   return (
     <div className="App">
-      {/* <MainPage />
-      <CategoriesPage /> */}
+      <MainPage />
+      <CategoriesPage />
       <SingleProductPage />
     </div>
   );

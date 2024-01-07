@@ -62,7 +62,7 @@
 
 .image_card {
     width: 57%;
-    height: auto;
+    min-height: auto;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -235,19 +235,17 @@
 
 @media (max-width: 768px) {
 
-    .prices_box p:last-child {
-        display: none;
-    }
-
     .image_card {
         position: relative;
+        /* height: 354px; */
     }
 
     .prices_box p:last-child {
-        display: inline;
-        position: fixed;
+        position: absolute;
         right: 52%;
         top: 17%;
+        z-index: 1;
+
     }
 
     .buttons {
