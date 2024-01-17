@@ -21,6 +21,10 @@
     margin-right: 32px;
 }
 
+.title_box_dark h3 {
+    color: #ffffff;
+}
+
 .title_box button {
     padding: 8px 16px;
     font-family: Montserrat;

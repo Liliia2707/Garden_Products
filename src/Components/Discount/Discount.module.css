@@ -5,6 +5,10 @@
     margin-bottom: 80px;
 }
 
+.discount_dark {
+    background-color: #282828;
+}
+
 h1 {
     color: #ffffff;
     font-size: clamp(3.25rem, 2.333rem + 4.07vw, 6rem);

@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
+import { Footer } from "../../Layaut/Footer/Footer";
+import { Header } from "../../Layaut/Header/Header";
+import minus from "../../Media/minus.svg";
+import plus from "../../Media/plus.svg";
+import { ThemeContext } from "../../Providers/Context";
 import { baseUrl } from "../../utils/api";
 import styles from "./SingleProductPage.module.css";
-import plus from "../../Media/plus.svg";
-import minus from "../../Media/minus.svg";
-import { Header } from "../../Layaut/Header/Header";
-import { Footer } from "../../Layaut/Footer/Footer";
 
 export const SingleProductPage = () => {
+  const [, , textColor, backgroung] = useContext(ThemeContext);
   const [value, setValue] = useState(1);
   const [product, setProduct] = useState([{}]);
   useEffect(() => {
@@ -27,7 +29,7 @@ export const SingleProductPage = () => {
     10
   );
   return (
-    <div>
+    <div style={backgroung}>
       <Header />
       <div className="container">
         <div className={styles.buttons}>
@@ -46,9 +48,9 @@ export const SingleProductPage = () => {
             className={styles.image_card}
           />
           <div className={styles.card_descriptoin}>
-            <h2>{product[0].title}</h2>
+            <h2 style={textColor}>{product[0].title}</h2>
             <div className={styles.prices_box}>
-              <p>${product[0].price}</p>
+              <p style={textColor}>${product[0].price}</p>
               <p>${product[0].discont_price}</p>
               <p>-{discountPercentage}%</p>
             </div>
@@ -62,7 +64,7 @@ export const SingleProductPage = () => {
                   />
                 </div>
                 <div className={styles.counter}>
-                  <p>{value}</p>
+                  <p style={textColor}>{value}</p>
                 </div>
                 <div className={styles.plus}>
                   <img
@@ -75,8 +77,8 @@ export const SingleProductPage = () => {
               <button>Add to cart</button>
             </div>
             <div className={styles.text_box}>
-              <p>Description</p>
-              <p>{product[0].description}</p>
+              <p style={textColor}>Description</p>
+              <p style={textColor}>{product[0].description}</p>
             </div>
           </div>
         </div>

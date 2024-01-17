@@ -21,6 +21,10 @@
     line-height: 130%;
 }
 
+.card_dark p {
+    color: #ffffff;
+}
+
 .card:hover p {
     color: #0B710B;
 }

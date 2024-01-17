@@ -12,6 +12,10 @@
     margin-bottom: 40px;
 }
 
+.footer_wrapper_dark h3 {
+    color: #ffffff;
+}
+
 .contact_container {
     width: 100%;
     display: grid;

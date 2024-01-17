@@ -1,16 +1,18 @@
-import './App.css';
-import { MainPage } from './Pages/Main page/MainPage';
-import { CategoriesPage } from './Pages/CategoriesPage/CategoriesPage';
-import { SingleProductPage } from './Pages/SingleProductPage/SingleProductPage';
-
+import "./App.css";
+import { CategoriesPage } from "./Pages/CategoriesPage/CategoriesPage";
+import MainPage from "./Pages/Main page/MainPage";
+import { SingleProductPage } from "./Pages/SingleProductPage/SingleProductPage";
+import Context from "./Providers/Context";
 
 function App() {
   return (
-    <div className="App">
-      <MainPage />
-      <CategoriesPage />
-      <SingleProductPage />
-    </div>
+    <Context>
+      <div>
+        <MainPage />
+        <CategoriesPage />
+        <SingleProductPage />
+      </div>
+    </Context>
   );
 }
 

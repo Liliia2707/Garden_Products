@@ -1,8 +1,18 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../Providers/Context";
 import styles from "./Navigation.module.css";
 
 export const Navigation = () => {
+  const [theme] = useContext(ThemeContext);
+
   return (
-    <div className={styles.navigation}>
+    <div
+      className={
+        theme === false
+          ? styles.navigation
+          : `${styles.navigation} ${styles.navigation_dark}`
+      }
+    >
       <ul>
         <li>
           <a href="#">Main Page</a>

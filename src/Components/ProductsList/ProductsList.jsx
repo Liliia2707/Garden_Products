@@ -1,7 +1,7 @@
-import { ProductsItem } from "../ProductItem/ProductItem";
-import { baseUrl } from "../../utils/api";
-import styles from "./ProductsList.module.css";
 import { useEffect, useState } from "react";
+import { baseUrl } from "../../utils/api";
+import { ProductsItem } from "../ProductItem/ProductItem";
+import styles from "./ProductsList.module.css";
 
 export const ProductsList = () => {
   const [productsList, setProductsList] = useState([]);

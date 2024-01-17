@@ -11,6 +11,10 @@
     line-height: 130%;
 }
 
+.navigation_dark a {
+    color: white;
+}
+
 .navigation a:hover {
     color: #0B710B;
 }

@@ -48,6 +48,10 @@
     margin-bottom: 16px;
 }
 
+.title_dark {
+    color: #ffffff;
+}
+
 .prices {
     display: flex;
     gap: 16px;
@@ -67,6 +71,10 @@
     font-weight: 500;
     line-height: 130%;
     text-decoration-line: line-through;
+}
+
+.prices_dark p:first-child {
+    color: #ffffff;
 }
 
 .productCard:hover .title {

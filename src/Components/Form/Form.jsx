@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import handsImage from "../../Media/hands.svg";
+import { ThemeContext } from "../../Providers/Context";
 import { DataForm } from "../DataForm/DataForm";
 import styles from "./Form.module.css";
-import handsImage from "../../Media/hands.svg";
 
 export const Form = () => {
+  const [theme] = useContext(ThemeContext);
   return (
     <div className={styles.form}>
       <div className="container">

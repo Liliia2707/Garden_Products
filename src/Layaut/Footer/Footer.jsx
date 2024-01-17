@@ -1,13 +1,16 @@
-import styles from "./Footer.module.css";
+import { useContext } from "react";
 import instImage from "../../Media/ic-instagram.svg";
 import wAppImage from "../../Media/ic-whatsapp.svg";
+import { ThemeContext } from "../../Providers/Context";
+import styles from "./Footer.module.css";
 
 export const Footer = () => {
+  const [, , textColor] = useContext(ThemeContext);
   return (
     <div className={styles.footer}>
       <div className="container">
         <div className={styles.footer_wrapper}>
-          <h3>Contact</h3>
+          <h3 style={textColor}>Contact</h3>
           <div className={styles.contact_container}>
             <div>
               <span>Phone</span>
