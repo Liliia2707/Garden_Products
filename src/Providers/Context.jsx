@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
-function Context({ children }) {
+export const Context = ({ children }) => {
   const [theme, setTheme] = useState(false);
 
   const textColor = {
@@ -18,6 +18,4 @@ function Context({ children }) {
       {children}
     </ThemeContext.Provider>
   );
-}
-
-export default Context;
+};

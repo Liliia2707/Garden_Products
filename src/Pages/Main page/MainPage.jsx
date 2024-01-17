@@ -7,7 +7,7 @@ import { Footer } from "../../Layaut/Footer/Footer";
 import { Header } from "../../Layaut/Header/Header";
 import { ThemeContext } from "../../Providers/Context";
 
-function MainPage() {
+export const MainPage = () => {
   const [, , , background] = useContext(ThemeContext);
   return (
     <div style={background}>
@@ -19,6 +19,4 @@ function MainPage() {
       <Footer />
     </div>
   );
-}
-
-export default MainPage;
+};
