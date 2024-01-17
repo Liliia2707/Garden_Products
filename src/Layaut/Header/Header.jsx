@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Navigation } from "../../Components/Navigation/Navigation";
-import bagIcon from "../../Media/bag-icon.svg";
+import bagIcon from "../../Media/bag-icon.png";
 import bagWhite from "../../Media/bag-white.png";
 import logo from "../../Media/logo.svg";
 import menuImage from "../../Media/menu-black.svg";
