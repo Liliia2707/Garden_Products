@@ -63,6 +63,7 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         margin-bottom: 20px;
+        width: 50%;
     }
 
     .discount {
@@ -82,5 +83,6 @@ h1 {
     .discount {
         padding-bottom: 236px;
     }
+
 
 }

@@ -70,7 +70,7 @@
         width: 44px;
     }
 
-    .image_box img:first-child {
+    #bagIcon {
         width: 32px;
     }
 
