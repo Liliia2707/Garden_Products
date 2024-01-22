@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../../Providers/Context";
 import styles from "./Navigation.module.css";
 
@@ -15,16 +16,16 @@ export const Navigation = () => {
     >
       <ul>
         <li>
-          <a href="#">Main Page</a>
+          <NavLink to="/main_page">Main Page</NavLink>
         </li>
         <li>
-          <a href="#">Categories</a>
+          <NavLink to="/categories">Categories</NavLink>
         </li>
         <li>
-          <a href="#">All products</a>
+          <NavLink to="/products">All products</NavLink>
         </li>
         <li>
-          <a href="#">All sales</a>
+          <NavLink to="/sales">All sales</NavLink>
         </li>
       </ul>
     </div>

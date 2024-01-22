@@ -1,6 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import { Footer } from "../../Layaut/Footer/Footer";
-import { Header } from "../../Layaut/Header/Header";
 import minus from "../../Media/minus.svg";
 import plus from "../../Media/plus.svg";
 import { ThemeContext } from "../../Providers/Context";
@@ -30,7 +28,6 @@ export const SingleProductPage = () => {
   );
   return (
     <div style={backgroung}>
-      <Header />
       <div className="container">
         <div className={styles.buttons}>
           <button>Main page</button>
@@ -87,7 +84,6 @@ export const SingleProductPage = () => {
           <p>{product[0].description}</p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

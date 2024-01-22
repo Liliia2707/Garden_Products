@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import exitBlack from "../../Media/exit-black.png";
 import exitWhite from "../../Media/exit-white.png";
 import { ThemeContext } from "../../Providers/Context";
@@ -11,34 +12,36 @@ const BurgerMenu = ({ setClick }) => {
   };
 
   return (
-    <div className={styles.burger_box} style={backgroundColor}>
-      <img
-        onClick={closeLinks}
-        src={theme ? exitWhite : exitBlack}
-        alt="exit"
-        id={styles.exit_button}
-      />
-      <div
-        className={
-          theme === false
-            ? styles.menu_list
-            : `${styles.menu_list} ${styles.menu_list_dark}`
-        }
-      >
-        <ul>
-          <li>
-            <a href="#">Main Page</a>
-          </li>
-          <li>
-            <a href="#">Categories</a>
-          </li>
-          <li>
-            <a href="#">All products</a>
-          </li>
-          <li>
-            <a href="#">All sales</a>
-          </li>
-        </ul>
+    <div className={styles.burger_container}>
+      <div className={styles.burger_box} style={backgroundColor}>
+        <img
+          onClick={closeLinks}
+          src={theme ? exitWhite : exitBlack}
+          alt="exit"
+          id={styles.exit_button}
+        />
+        <div
+          className={
+            theme === false
+              ? styles.menu_list
+              : `${styles.menu_list} ${styles.menu_list_dark}`
+          }
+        >
+          <ul>
+            <li>
+              <NavLink to="/main_page">Main Page</NavLink>
+            </li>
+            <li>
+              <NavLink to="/categories">Categories</NavLink>
+            </li>
+            <li>
+              <NavLink to="/products">All products</NavLink>
+            </li>
+            <li>
+              <NavLink to="/sales">All sales</NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

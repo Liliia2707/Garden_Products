@@ -7,14 +7,15 @@ export const ProductsItem = ({ image, title, price, discont_price }) => {
   const [theme] = useContext(ThemeContext);
   const imageUrl = `${baseUrl}${image}`;
   const discount = price - discont_price;
-  const discountPercentage = parseInt(
-    ((discount / price) * 100).toFixed(0),
-    10
-  );
+  const discountPercentage = discont_price
+    ? parseInt(((discount / price) * 100).toFixed(0), 10)
+    : "";
 
   return (
     <div
-      className={styles.productCard}
+      className={`${styles.productCard} ${
+        discountPercentage !== "" ? styles["has-discount"] : ""
+      }`}
       data-discount-percentage={discountPercentage}
     >
       <img src={imageUrl} alt={title} />
@@ -35,8 +36,12 @@ export const ProductsItem = ({ image, title, price, discont_price }) => {
               : `${styles.prices} ${styles.prices_dark}`
           }
         >
-          <p>${price}</p>
-          <p>${discont_price}</p>
+          <p className={styles.price}>${price}</p>
+          {discont_price ? (
+            <p className={styles.discont_price}>${discont_price}</p>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

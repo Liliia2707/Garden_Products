@@ -3,7 +3,7 @@ import { baseUrl } from "../../utils/api";
 import { ProductsItem } from "../ProductItem/ProductItem";
 import styles from "./ProductsList.module.css";
 
-export const ProductsList = () => {
+export const ProductsList = ({ content }) => {
   const [productsList, setProductsList] = useState([]);
   useEffect(() => {
     const fetchProductsList = async () => {
@@ -15,10 +15,14 @@ export const ProductsList = () => {
   }, []);
   return (
     <div className={styles.products_block}>
-      {productsList
-        .filter((product) => product.discont_price)
-        .map((product) => <ProductsItem key={product.id} {...product} />)
-        .slice(0, 4)}
+      {content === "main"
+        ? productsList
+            .filter((product) => product.discont_price)
+            .map((product) => <ProductsItem key={product.id} {...product} />)
+            .slice(0, 4)
+        : productsList.map((product) => (
+            <ProductsItem key={product.id} {...product} />
+          ))}
     </div>
   );
 };

@@ -1,0 +1,94 @@
+.error_block {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.error_block h3 {
+    color: #282828;
+    font-size: clamp(2.5rem, 1.857rem + 2.86vw, 4rem);
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+.error_block p {
+    color: #8B8B8B;
+    font-size: clamp(1.125rem, 1.071rem + 0.24vw, 1.25rem);
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.error_block button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #339933;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.error_block button:hover {
+    background-color: #2b802b;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.error_block button:active {
+    transform: scale(0.95);
+}
+
+.imgError {
+    width: 179px;
+}
+
+@media (max-width: 1000px) {
+    .imgError {
+        width: 159px;
+    }
+
+    .cactus_error {
+        width: 266px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgError {
+        width: 109px;
+    }
+
+    .cactus_error {
+        width: 181px;
+    }
+
+    .error_block button {
+        padding: 12px 52px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgError {
+        width: 78px;
+    }
+
+    .cactus_error {
+        width: 131px;
+    }
+}

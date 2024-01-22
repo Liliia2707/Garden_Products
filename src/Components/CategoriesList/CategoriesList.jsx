@@ -1,8 +1,7 @@
-import { useState } from "react";
-import style from "./CategoriesList.module.css";
-import { useEffect } from "react";
-import { CategoryItem } from "../CategoryItem/CategoryItem";
+import { useEffect, useState } from "react";
 import { baseUrl } from "../../utils/api";
+import { CategoryItem } from "../CategoryItem/CategoryItem";
+import styles from "./CategoriesList.module.css";
 
 export const CategoriesList = ({ content }) => {
   const [categories, setCategories] = useState([]);
@@ -16,15 +15,17 @@ export const CategoriesList = ({ content }) => {
   }, []);
   return (
     <div>
-      <div className={style.categories_block}>
+      <div className={styles.categories_block}>
         {content === "main"
           ? categories
               .map((category) => (
-                <CategoryItem key={category.id} {...category} />
+                // <Link to={`/categories/${category.id}`}  >
+                <CategoryItem {...category} key={category.id} />
+                // </Link>
               ))
-              .splice(0, 4)
+              .slice(0, 4)
           : categories.map((category) => (
-              <CategoryItem key={category.id} {...category} />
+              <CategoryItem {...category} key={category.id} />
             ))}
       </div>
     </div>

@@ -5,9 +5,9 @@ import { ThemeContext } from "../../Providers/Context";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
-  const [, , textColor] = useContext(ThemeContext);
+  const [, , textColor, backgroundColor] = useContext(ThemeContext);
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} style={backgroundColor}>
       <div className="container">
         <div className={styles.footer_wrapper}>
           <h3 style={textColor}>Contact</h3>

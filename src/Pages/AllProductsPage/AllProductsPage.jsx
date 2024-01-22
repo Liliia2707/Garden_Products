@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { CategoriesList } from "../../Components/CategoriesList/CategoriesList";
+import { ProductsList } from "../../Components/ProductsList/ProductsList";
 import { ThemeContext } from "../../Providers/Context";
-import styles from "./CategoriesPage.module.css";
+import styles from "./AllProductsPage.module.css";
 
-export const CategoriesPage = () => {
+const AllProductsPage = () => {
   const [, , textColor, backgroung] = useContext(ThemeContext);
   return (
     <div style={backgroung}>
@@ -11,13 +11,15 @@ export const CategoriesPage = () => {
         <div className={styles.button_box}>
           <button>Main page</button>
           <div className={styles.line}></div>
-          <button>Categories</button>
+          <button>All products</button>
         </div>
         <p className={styles.title} style={textColor}>
-          Categories
+          All products
         </p>
-        <CategoriesList />
+        <ProductsList />
       </div>
     </div>
   );
 };
+
+export default AllProductsPage;

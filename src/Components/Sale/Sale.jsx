@@ -13,7 +13,7 @@ export const Sale = () => {
           <div className={style.line}></div>
           <button>All sales</button>
         </div>
-        <ProductsList />
+        <ProductsList content="main" />
         <div className={style.hidden_button}>
           <button>All sales</button>
         </div>

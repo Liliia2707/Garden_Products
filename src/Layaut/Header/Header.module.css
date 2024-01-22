@@ -2,6 +2,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #DDD;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 .header_wrapper {

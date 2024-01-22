@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     cursor: pointer;
 }
 

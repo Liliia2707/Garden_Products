@@ -10,7 +10,7 @@ import { ThemeContext } from "../../Providers/Context";
 import styles from "./Header.module.css";
 
 export const Header = () => {
-  const [theme, setTheme] = useContext(ThemeContext);
+  const [theme, setTheme, , backgroung] = useContext(ThemeContext);
   const [click, setClick] = useState(false);
 
   const openLinks = () => {
@@ -22,7 +22,7 @@ export const Header = () => {
   };
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} style={backgroung}>
       <div className="container">
         <div className={styles.header_wrapper}>
           <img src={logo} alt="logo" />
