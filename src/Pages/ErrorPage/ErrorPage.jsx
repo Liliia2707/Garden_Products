@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import img0 from "../../Media/img0.svg";
 import img4 from "../../Media/img4.svg";
 import img4black from "../../Media/img4_black.jpg";
@@ -32,7 +33,9 @@ const ErrorPage = () => {
             Please go back to the homepage.
           </p>
 
-          <button>Go Home</button>
+          <Link to="/main_page">
+            <button>Go Home</button>
+          </Link>
         </div>
       </div>
     </div>

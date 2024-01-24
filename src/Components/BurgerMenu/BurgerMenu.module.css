@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 10;
 }
 
 .burger_box {
@@ -53,7 +53,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 999;
+        z-index: 10;
     }
 
     .menu_list_dark a {

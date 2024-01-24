@@ -10,7 +10,8 @@ import AllProductsPage from './Pages/AllProductsPage/AllProductsPage';
 import { CategoriesPage } from "./Pages/CategoriesPage/CategoriesPage";
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import { MainPage } from './Pages/Main page/MainPage';
-import SingleCategotyPage from './Pages/SingleCategotyPage/SingleCategoryPage';
+import SalePage from './Pages/SalePage/SalePage';
+import SingleCategoryPage from './Pages/SingleCategoryPage/SingleCategoryPage';
 import { SingleProductPage } from './Pages/SingleProductPage/SingleProductPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,13 +29,10 @@ const router = createBrowserRouter([
         element: <CategoriesPage />
       },
       {
-        path: '/categories/:title',
-        element: <SingleCategotyPage />
+        path: '/categories/:id',
+        element: <SingleCategoryPage />
       },
-      {
-        path: '/*',
-        element: <ErrorPage />
-      },
+
       {
         path: '/products',
         element: <AllProductsPage />
@@ -42,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: '/product',
         element: <SingleProductPage />
+      },
+      {
+        path: '/sales',
+        element: <SalePage />
+      },
+      {
+        path: '/*',
+        element: <ErrorPage />
       },
     ]
   },

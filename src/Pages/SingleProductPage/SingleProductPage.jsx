@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import minus from "../../Media/minus.svg";
 import plus from "../../Media/plus.svg";
 import { ThemeContext } from "../../Providers/Context";
@@ -30,13 +31,17 @@ export const SingleProductPage = () => {
     <div style={backgroung}>
       <div className="container">
         <div className={styles.buttons}>
-          <button>Main page</button>
+          <Link to="/main_page">
+            <button>Main page</button>
+          </Link>
           <div className={styles.line}></div>
-          <button>Categories</button>
+          <Link to="/main_page">
+            <button>Categories</button>
+          </Link>
           <div className={styles.line}></div>
           <button>Tools and equipment</button>
           <div className={styles.line}></div>
-          <button>Secateurs</button>
+          <button id={styles.last_button}>Secateurs</button>
         </div>
         <div className={styles.card_product}>
           <img

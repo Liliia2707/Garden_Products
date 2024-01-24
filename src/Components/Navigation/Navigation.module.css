@@ -5,19 +5,25 @@
     gap: 32px;
 }
 
-.navigation a {
+.link {
     color: #282828;
     font-size: 20px;
     line-height: 130%;
 }
 
-.navigation_dark a {
+.link_dark a {
     color: white;
 }
 
-.navigation a:hover {
+
+.link:hover {
     color: #0B710B;
 }
+
+.active {
+    color: #0B710B;
+}
+
 
 @media (max-width: 1000px) {
     .navigation ul {
