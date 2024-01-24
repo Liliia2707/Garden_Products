@@ -83,27 +83,3 @@
 .productCard:hover .title {
     color: #0B710B;
 }
-
-@media (max-width: 1440px) {
-    .productCard {
-        width: 31%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .productCard {
-        width: 47%;
-    }
-}
-
-@media (max-width: 768px) {
-    .productCard {
-        width: 46%;
-    }
-}
-
-@media (max-width: 480px) {
-    .productCard {
-        width: 100%;
-    }
-}
