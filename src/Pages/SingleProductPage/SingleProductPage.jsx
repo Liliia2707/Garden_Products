@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import minus from "../../Media/minus.svg";
 import plus from "../../Media/plus.svg";
 import { ThemeContext } from "../../Providers/Context";
@@ -10,15 +10,17 @@ export const SingleProductPage = () => {
   const [, , textColor, backgroung] = useContext(ThemeContext);
   const [value, setValue] = useState(1);
   const [product, setProduct] = useState([{}]);
+  const { id } = useParams();
+
   useEffect(() => {
     const fetchProduct = async () => {
-      const response = await fetch(`${baseUrl}/products/1 `);
+      const response = await fetch(`${baseUrl}/products/${id} `);
       const data = await response.json();
       console.log(data);
       setProduct(data);
     };
     fetchProduct();
-  }, []);
+  }, [id]);
 
   const imageUrl =
     product[0] && product[0].image ? `${baseUrl}${product[0].image}` : "";

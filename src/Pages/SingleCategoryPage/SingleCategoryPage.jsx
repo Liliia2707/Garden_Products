@@ -36,9 +36,16 @@ const SingleCategoryPage = () => {
           {category && category.title}
         </p>
         <div className={styles.products_block}>
-          {data.map((product) => (
-            <ProductsItem key={product.id} {...product} />
-          ))}
+          {data &&
+            data.map((product) => (
+              <Link
+                to={`/categories/${id}/${product.id}`}
+                key={product.id}
+                className={styles.link}
+              >
+                <ProductsItem {...product} />
+              </Link>
+            ))}
         </div>
       </div>
     </div>
