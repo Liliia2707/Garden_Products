@@ -16,7 +16,9 @@ export const Sale = () => {
             <button>All sales</button>
           </Link>
         </div>
-        <ProductsList content="main" />
+        <div className={style.link}>
+          <ProductsList content="main" />
+        </div>
         <div className={style.hidden_button}>
           <Link to="/sales">
             <button>All sales</button>

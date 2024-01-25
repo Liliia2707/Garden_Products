@@ -8,9 +8,30 @@
     flex-wrap: wrap;
 }
 
+.link {
+    width: 23%;
+}
+
 @media (max-width: 1440px) {
     .products_block {
         flex-wrap: wrap;
+    }
+
+    .link {
+        width: 31%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .link {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .link {
+        width: 46%;
     }
 }
 
@@ -21,5 +42,9 @@
 
     .products_block {
         padding-bottom: 24px;
+    }
+
+    .link {
+        width: 100%;
     }
 }

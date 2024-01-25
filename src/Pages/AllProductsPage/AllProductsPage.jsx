@@ -19,8 +19,9 @@ const AllProductsPage = () => {
         <p className={styles.title} style={textColor}>
           All products
         </p>
-
-        <ProductsList />
+        <div>
+          <ProductsList />
+        </div>
       </div>
     </div>
   );

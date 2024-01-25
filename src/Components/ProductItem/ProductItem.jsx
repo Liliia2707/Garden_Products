@@ -14,7 +14,7 @@ export const ProductsItem = ({ image, title, price, discont_price }) => {
   return (
     <div
       className={`${styles.productCard} ${
-        discountPercentage !== "" ? styles["has-discount"] : ""
+        discountPercentage ? styles["has-discount"] : ""
       }`}
       data-discount-percentage={discountPercentage}
     >
@@ -36,11 +36,13 @@ export const ProductsItem = ({ image, title, price, discont_price }) => {
               : `${styles.prices} ${styles.prices_dark}`
           }
         >
-          <p className={styles.price}>${price}</p>
-          {discont_price ? (
-            <p className={styles.discont_price}>${discont_price}</p>
+          {discont_price === null ? (
+            <p className={styles.price}>${price}</p>
           ) : (
-            ""
+            <>
+              <p className={styles.price}>${discont_price}</p>
+              <p className={styles.discont_price}>${price}</p>
+            </>
           )}
         </div>
       </div>

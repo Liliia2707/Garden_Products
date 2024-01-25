@@ -30,7 +30,7 @@ const SingleCategoryPage = () => {
             <button>Main page</button>
           </Link>
           <div className={styles.line}></div>
-          <button>All products</button>
+          <button>Categories</button>
         </div>
         <p style={textColor} className={styles.title}>
           {category && category.title}

@@ -87,7 +87,7 @@
     align-items: flex-end;
 }
 
-.prices_box p:first-child {
+.price {
     color: #282828;
     font-size: clamp(2.5rem, 2rem + 2.22vw, 4rem);
     font-weight: 700;
@@ -95,7 +95,7 @@
     margin-right: 32px;
 }
 
-.prices_box p:nth-child(2) {
+.discont_price {
     color: #8B8B8B;
     font-size: clamp(1.75rem, 1.5rem + 1.11vw, 2.5rem);
     font-weight: 500;
@@ -104,7 +104,7 @@
     margin-right: 24px;
 }
 
-.prices_box p:last-child {
+.discountPercentage {
     align-self: flex-start;
     border-radius: 6px;
     background: #393;
@@ -201,7 +201,7 @@
 
     .text_box_hidden {
         display: block;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 
     .text_box_hidden p:last-child {
@@ -240,7 +240,7 @@
         /* height: 354px; */
     }
 
-    .prices_box p:last-child {
+    .discountPercentage {
         position: absolute;
         right: 52%;
         top: 17%;
