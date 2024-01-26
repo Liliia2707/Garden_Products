@@ -7,19 +7,17 @@ export const Navigation = () => {
   const [theme, , textColor] = useContext(ThemeContext);
 
   return (
-    <div
-      className={
-        theme === false
-          ? styles.navigation
-          : `${styles.navigation} ${styles.link_dark}`
-      }
-    >
+    <div className={styles.navigation}>
       <ul>
         <li>
           <NavLink
             to="/main_page"
             className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
+              isActive
+                ? `${styles.link} ${theme ? styles.link_dark : ""} ${
+                    styles.active
+                  }`
+                : `${styles.link} ${theme ? styles.link_dark : ""}`
             }
           >
             Main Page
@@ -29,7 +27,11 @@ export const Navigation = () => {
           <NavLink
             to="/categories"
             className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
+              isActive
+                ? `${styles.link} ${theme ? styles.link_dark : ""} ${
+                    styles.active
+                  }`
+                : `${styles.link} ${theme ? styles.link_dark : ""}`
             }
           >
             Categories
@@ -39,7 +41,11 @@ export const Navigation = () => {
           <NavLink
             to="/products"
             className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
+              isActive
+                ? `${styles.link} ${theme ? styles.link_dark : ""} ${
+                    styles.active
+                  }`
+                : `${styles.link} ${theme ? styles.link_dark : ""}`
             }
           >
             All products
@@ -49,7 +55,11 @@ export const Navigation = () => {
           <NavLink
             to="/sales"
             className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
+              isActive
+                ? `${styles.link} ${theme ? styles.link_dark : ""} ${
+                    styles.active
+                  }`
+                : `${styles.link} ${theme ? styles.link_dark : ""}`
             }
           >
             All sales

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import minus from "../../Media/minus.svg";
 import plus from "../../Media/plus.svg";
 import { ThemeContext } from "../../Providers/Context";
@@ -12,6 +12,9 @@ export const SingleProductPage = () => {
   const [products, setProducts] = useState([]);
 
   const { id } = useParams();
+
+  const location = useLocation();
+  const { categoryId, categoryTitle } = location.state || {};
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -35,9 +38,13 @@ export const SingleProductPage = () => {
             <button>Categories</button>
           </Link>
           <div className={styles.line}></div>
-          <button>Tools and equipment</button>
+          <Link to={`/categories/${categoryId}`}>
+            <button>{categoryTitle}</button>
+          </Link>
           <div className={styles.line}></div>
-          <button id={styles.last_button}>Secateurs</button>
+          <button id={styles.last_button}>
+            {products.length > 0 ? products[0].title : ""}
+          </button>
         </div>
 
         {products.map((product) => (

@@ -30,7 +30,11 @@ const SingleCategoryPage = () => {
             <button>Main page</button>
           </Link>
           <div className={styles.line}></div>
-          <button>Categories</button>
+          <Link to="/categories">
+            <button>Categories</button>
+          </Link>
+          <div className={styles.line}></div>
+          <button> {category && category.title}</button>
         </div>
         <p style={textColor} className={styles.title}>
           {category && category.title}
@@ -42,6 +46,7 @@ const SingleCategoryPage = () => {
                 to={`/categories/${id}/${product.id}`}
                 key={product.id}
                 className={styles.link}
+                state={{ categoryId: id, categoryTitle: category.title }}
               >
                 <ProductsItem {...product} />
               </Link>

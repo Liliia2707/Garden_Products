@@ -11,7 +11,7 @@ export const CategoriesPage = () => {
       <div className="container">
         <div className={styles.button_box}>
           <Link to="/main_page">
-            <button>Main page</button>{" "}
+            <button>Main page</button>
           </Link>
           <div className={styles.line}></div>
           <button>Categories</button>
