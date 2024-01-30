@@ -1,6 +1,6 @@
 .dataForm {
     width: 40%;
-    padding: 32px 0;
+    padding: 32px 0 10px 0;
 }
 
 form {
@@ -46,6 +46,13 @@ input:-webkit-autofill {
     color: #0B710B;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 
+}
+
+.message {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 input::placeholder {

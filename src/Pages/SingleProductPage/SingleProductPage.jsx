@@ -10,9 +10,7 @@ export const SingleProductPage = () => {
   const [, , textColor, background] = useContext(ThemeContext);
   const [value, setValue] = useState(1);
   const [products, setProducts] = useState([]);
-
   const { id } = useParams();
-
   const location = useLocation();
   const { categoryId, categoryTitle } = location.state || {};
 
@@ -30,7 +28,7 @@ export const SingleProductPage = () => {
     <div style={background}>
       <div className="container">
         <div className={styles.buttons}>
-          <Link to="/main_page">
+          <Link to={"/main_page"}>
             <button>Main page</button>
           </Link>
           <div className={styles.line}></div>
